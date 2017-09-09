@@ -30,11 +30,7 @@ describe('echo()',()=>{ //จัดกลุ่มเด้อ set name what you
       })
 
       test('Echo "Love - Love" when game start', () => {
-          // Arrange
-          // let app = new TennisGame()
 
-          // Act
-          //app.reset()
           let result = app.echo()
 
           // Assert
@@ -43,8 +39,7 @@ describe('echo()',()=>{ //จัดกลุ่มเด้อ set name what you
 
       test('Echo "Fifteen - Love" when playerA get first score', () => {
           // Arrange
-          let app = new TennisGame()
-          app.reset()
+
           app.playerAGetScore()
 
           // Act
@@ -54,9 +49,7 @@ describe('echo()',()=>{ //จัดกลุ่มเด้อ set name what you
           expect(result).toBe('Fifteen - Love')
       })
       test('Echo "Love - Fifteen" when playerB get first score', () => {
-          // Arrange
-          // let app = new TennisGame()
-          // app.reset()
+
           app.playerBGetScore()
 
           // Act
@@ -67,8 +60,7 @@ describe('echo()',()=>{ //จัดกลุ่มเด้อ set name what you
       })
 
       test('Echo "Thirty - Fifteen" when score is 30 - 15', () => {
-        // let app = new TennisGame()
-        // app.reset()
+
 
         app.playerAGetScore()
         app.playerAGetScore()
